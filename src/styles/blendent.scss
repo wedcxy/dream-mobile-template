@@ -1,0 +1,20 @@
+//背景颜色
+$background-color-base:#F5F7FA;
+
+//主要文本颜色
+$color-text-primary:#303133;
+//常规文本颜色
+$color-text-regular:#606266;
+//次要文本颜色
+$color-text-secondary:#909399;
+//占位文本颜色
+$color-text-placeholder:#C0C4CC;
+
+
+:export {
+  background-color-base: $background-color-base;
+  color-text-primary: $color-text-primary;
+  color-text-regular: $color-text-regular;
+  color-text-secondary: $color-text-secondary;
+  color-text-placeholder: $color-text-placeholder;
+}

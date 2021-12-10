@@ -1,0 +1,7 @@
+//动态px转换rem
+$ratio: 375 / 10;
+
+@function rem($px) {
+  @return $px / $ratio + rem;
+}
+
