@@ -9,7 +9,7 @@ import '@/styles/init.scss'
 // 动态计算font-size
 import './utlis/init.js'
 // vant-ui按需导入
-import './utlis/vantImport.js'
+import './utlis/Vant/index'
 
 Vue.config.productionTip = false
 

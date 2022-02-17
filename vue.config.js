@@ -1,3 +1,4 @@
+const name = 'Dream-mobile-template' // 网页标题
 module.exports = {
   // 配置sass公共颜色和公共函数
   css: {
@@ -7,6 +8,11 @@ module.exports = {
       }
     }
   },
-  // 部署应用包时的基本 URL
-  publicPath: '/checkH5'
+  devServer: {
+    open: true, // 设置是否自动打开浏览器
+    hotOnly: false // 是否开启热更新
+  },
+  configureWebpack: {
+    name: name
+  }
 }

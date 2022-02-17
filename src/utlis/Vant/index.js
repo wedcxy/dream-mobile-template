@@ -1,4 +1,4 @@
-// 按需导入vant
+// 按需导入vant组件
 
 import Vue from 'vue'
 import {
@@ -80,4 +80,3 @@ Vue.use(Button)
   .use(CheckboxGroup)
   .use(Calendar)
   .use(Divider)
-export default Vue
