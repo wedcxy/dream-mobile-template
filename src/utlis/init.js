@@ -6,4 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
   html.style.fontSize = fontSize + 'px'
 })
 
-console.log('%c ', `background:url(https://cn.vuejs.org/images/logo.svg) no-repeat; font-size:140px;line-height: 50px`)
+console.log('%c 项目：Dream-vue-template\n%c 邮箱：3148264655@qq.com\n%c 作者：梦未央', 'color:#409EFF', '', 'color:orange;font-weight:bold;')
+

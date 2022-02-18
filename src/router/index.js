@@ -7,9 +7,26 @@ const routes = [
   {
     path: '/',
     name: 'index',
-    component: () => import('../views/index')
+    component: () => import('../views/taberNavigation/index'),
+    children: [
+      {
+        path: 'person',
+        meta: { title: '我的' },
+        component: () => import('../views/person/index')
+      },
+      {
+        path: 'home',
+        component: () => import('../views/home/index')
+      }
+    ]
   }
 ]
+
+const originalPush = VueRouter.prototype.push
+
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 const router = new VueRouter({
   mode: 'history',
