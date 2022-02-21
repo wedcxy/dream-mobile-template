@@ -8,6 +8,7 @@ const routes = [
     path: '/',
     name: 'index',
     component: () => import('../views/taberNavigation/index'),
+    redirect: '/home',
     children: [
       {
         path: 'person',
