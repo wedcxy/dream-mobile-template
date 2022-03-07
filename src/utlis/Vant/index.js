@@ -7,7 +7,8 @@ import {
   Tabbar,
   TabbarItem,
   NavBar,
-  Dialog
+  Dialog,
+  Toast
 } from 'vant'
 
 Vue.use(Cell)
@@ -16,4 +17,5 @@ Vue.use(Cell)
   .use(TabbarItem)
   .use(NavBar)
   .use(Dialog)
+  .use(Toast)
 
