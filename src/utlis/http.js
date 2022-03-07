@@ -40,8 +40,8 @@ axios.interceptors.response.use(
     const msg = response.data.msg || '请求失败'
     if (code === 200) {
       return Promise.resolve(response)
-    } else if (code === 401) {
-      window.location.href = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${global.appid}&redirect_uri=${global.redirectURL}&response_type=code&scope=snsapi_userinfo`
+    } else if (code === 404) {
+      window.location.href = ``
     } else {
       Toast.fail(msg)
       return Promise.reject(response)
