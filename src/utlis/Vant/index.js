@@ -2,12 +2,12 @@
 
 import Vue from 'vue'
 import {
+  Dialog,
   Cell,
   CellGroup,
   Tabbar,
   TabbarItem,
   NavBar,
-  Dialog,
   Toast
 } from 'vant'
 
